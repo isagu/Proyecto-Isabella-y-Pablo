@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sazón de Cañas | Guía Gastronómica de Cañas, Guanacaste</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>El Sazón de <span>Cañas</span></h1>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+            ☰
+        </button>
+        <nav class="nav" id="navMenu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Lugares.html">Lugares</a></li>
+                <li><a href="menú.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" class="btn-theme">Modo Oscuro</button>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="badge">Guía Gastronómica de Cañas</span>
+            <h2>Descubre la Sazón y la Tradición Guanacasteca</h2>
+            <p>Explora las mejores sodas, cafeterías y restaurantes de Cañas. ¡Una experiencia para el paladar!</p>
+            <a href="lugares.html" class="btn-primary">Ver Establecimientos</a>
+        </div>
+    </section>
+
+    <section id="lugares" class="container section">
+        <h2 class="section-title">Establecimientos Destacados</h2>
+        <p class="section-subtitle">Conoce los 5 mejores rincones gastronómicos seleccionados en Cañas</p>
+
+        <div class="grid-lugares">
+
+            <article class="card-lugar">
+                <div class="card-img">
+                    <img src="bastos uwuw.jpg" alt="Fachada de Bastos Restaurante">
+                    <span class="categoria">Restaurante</span>
+                </div>
+                <div class="card-body">
+                    <h3>Bastos Restaurante</h3>
+                    <p class="tipo-comida"><strong>Especialidad:</strong> Carnes a la parrilla y platos de cocina nacional e internacional.</p>
+                    <p class="descripcion">Bastos Restaurante es reconocido en Cañas, Guanacaste, por la calidad y variedad de sus platillos, especialmente por sus carnes y preparaciones a la parrilla.</p>
+                </div>
+            </article>
+
+            <article class="card-lugar">
+                <div class="card-img">
+                    <img src="WhatsApp Image 2026-08-27 at 9.55.30 PM.jpeg" alt="Café del Sol">
+                    <span class="categoria">Cafetería</span>
+                </div>
+                <div class="card-body">
+                    <h3>Café Bohemio</h3>
+                    <p class="tipo-comida"><strong>Especialidad:</strong> Café, bebidas, repostería y postres.</p>
+                    <p class="descripcion">Café Bohemio es una cafetería de Cañas, Guanacaste, reconocida por ofrecer un espacio agradable para disfrutar de café, bebidas y diferentes opciones de repostería y comida.</p>
+                </div>
+            </article>
+
+            <article class="card-lugar">
+                <div class="card-img">
+                    <img src="pizzeria 2.jpg" alt="Pizzería La Cañera">
+                    <span class="categoria">Pizzería</span>
+                </div>
+                <div class="card-body">
+                    <h3>Pizzería Tsunami Cañas</h3>
+                    <p class="tipo-comida"><strong>Especialidad:</strong> Pizzas y comida Italiana</p>
+                    <p class="descripcion">Pizzería Tsunami es una opción de comida rápida en Cañas, Guanacaste, reconocida principalmente por su variedad de pizzas y por ofrecer una alternativa práctica para compartir en familia o con amigos.</p>
+                </div>
+            </article>
+
+            <article class="card-lugar">
+                <div class="card-img">
+                    <img src="antojitos.jpg" alt="Soda Doña María">
+                    <span class="categoria">Soda Tradicional</span>
+                </div>
+                <div class="card-body">
+                    <h3>Soda Los Antojitos</h3>
+                    <p class="tipo-comida"><strong>Especialidad:</strong> Comida casera y platos típicos costarricenses.</p>
+                    <p class="descripcion">Soda Los Antojitos es un establecimiento de comida ubicado en Cañas, Guanacaste, que ofrece una propuesta sencilla y cercana, ideal para quienes buscan disfrutar de comida casera y tradicional.</p>
+                </div>
+            </article>
+
+            <article class="card-lugar">
+                <div class="card-img">
+                    <img src="Lara´s food.jpg" alt="Burger & Grill Cañas">
+                    <span class="categoria">Comida Rápida</span>
+                </div>
+                <div class="card-body">
+                    <h3>Lara's Food Cañas</h3>
+                    <p class="tipo-comida"><strong>Especialidad:</strong> Comida rápida, hamburguesas y acompañamientos.</p>
+                    <p class="descripcion">Lara’s Food es un establecimiento de comida en Cañas, Guanacaste, que se enfoca principalmente en opciones de comida rápida.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="menu" class="bg-light section">
+        <div class="container">
+            <h2 class="section-title">Platillos y Menú</h2>
+            <p class="section-subtitle">Algunas opciones de platillos populares que encontrarás en nuestros comercios</p>
+
+            <div class="table-responsive">
+                <table class="tabla-menu">
+                    <thead>
+                        <tr>
+                            <th>Establecimiento</th>
+                            <th>Platillo / Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio Estimado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bastos Restaurante</td>
+                            <td>Corte de Carne Grill</td>
+                            <td>Filete de carne a la parrilla, acompañado de papas salteadas, vegetales al vapor y chimichurri</td>
+                            <td>₡7,500</td>
+                        </tr>
+                        <tr>
+                            <td>Café Bohemio</td>
+                            <td>Cheesecake de la Casa</td>
+                            <td>Porción de tarta de queso sobre base de galleta, cubierta con mermelada artesanal de frutos rojos</td>
+                            <td>₡2,500</td>
+                        </tr>
+                        <tr>
+                            <td>Pizzería Tsunami Cañas</td>
+                            <td>Pizza Familiar Especial</td>
+                            <td>Masa artesanal con salsa de tomate, abundante queso mozzarella, jamón, pepperoni, hongos frescos, pimientos verdes y cebolla</td>
+                            <td>₡8,500</td>
+                        </tr>
+                        <tr>
+                            <td>Soda Los Antojitos</td>
+                            <td>Empanada Arreglada</td>
+                            <td>Empanada grande de maíz rellena de carne o queso, abierta y preparada con repollo picado, mayonesa, ketchup y tomate</td>
+                            <td>₡1,500</td>
+                        </tr>
+                        <tr>
+                            <td>Lara´s Food Cañas</td>
+                            <td>Nachos Supremos</td>
+                            <td>Capa de tortillas de maíz fritas (totopos) cubiertas con frijoles molidos, queso fundido, carne molida o pollo, pico de gallo, jalapeños y crema ácida</td>
+                            <td>₡4,200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Sazón de Cañas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

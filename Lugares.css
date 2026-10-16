@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-main: #fcfbf9;
+    --bg-card: #ffffff;
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --brand-color: #cf5628; 
+    --badge-bg: #d97706;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+h1, h2, h3, .section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--bg-card);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.logo h1 span {
+    color: var(--brand-color);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--brand-color);
+}
+
+.btn-theme {
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+    border-color: var(--brand-color);
+    color: var(--brand-color);
+}
+
+
+.banner-lugares {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('bastos uwuw.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner-lugares h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.banner-lugares p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.lista-detallada-lugares {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.ficha-lugar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ficha-lugar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ficha-img {
+    position: relative;
+    width: 38%;
+    min-width: 280px;
+}
+
+.ficha-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-categoria {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--brand-color);
+    color: #ffffff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.ficha-info {
+    padding: 25px;
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ficha-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ficha-header h3 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.calificacion {
+    background-color: #fef3c7;
+    color: #b45309;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.especialidad {
+    color: var(--brand-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.especialidad strong {
+    color: var(--text-primary);
+}
+
+.descripcion-corta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.detalles-contacto {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mapa-contenedor {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.acciones-lugar {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: var(--brand-color);
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b3451e;
+}
+
+.btn-secundario {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+.btn-secundario:hover {
+    background-color: #d1d5db;
+}
+
+
+.footer {
+    background-color: var(--bg-card);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+
+body.dark-mode {
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #d1d5db;
+}
+
+body.dark-mode .detalles-contacto {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-mode .btn-secundario {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-secundario:hover {
+    background-color: #4b5563;
+}
+
+body.dark-mode .btn-theme {
+    border-color: #4b5563;
+}
+
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-card);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .ficha-lugar {
+        flex-direction: column;
+    }
+
+    .ficha-img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .ficha-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ficha-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .acciones-lugar {
+        flex-direction: column;
+    }
+
+    .btn-secundario, .btn-primary {
+        text-align: center;
+    }
+}

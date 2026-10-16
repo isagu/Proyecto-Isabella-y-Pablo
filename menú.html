@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sazón Cañera - Menús</title>
+  <link rel="stylesheet" href="menú.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <h1>Sazón <span>Cañera</span></h1>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      &#9776;
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="lugares.html">Lugares</a></li>
+        <li><a href="men.html">Menú</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-theme" id="btnTheme">Modo Oscuro</button>
+  </header>
+
+  <section class="banner-lugares">
+    <span class="badge">Gastronomía Local</span>
+    <h2>Guía Gastronómica</h2>
+    <p>Consulta los mejores menús y platillos de Cañera</p>
+  </section>
+
+  <section class="section container" style="padding-bottom: 0;">
+    <div class="controls">
+      <input type="text" id="searchInput" class="search-input" placeholder="Buscar platillo o bebida..." onkeyup="filtrarMenu()">
+      <select id="filterRestaurante" onchange="filtrarRestaurante()">
+        <option value="todos">Todos los restaurantes</option>
+        <option value="bastos">1. Bastos</option>
+        <option value="bohemio">2. Café Bohemio</option>
+        <option value="antojitos">3. Soda Los Antojitos</option>
+        <option value="tsunami">4. Pizzería Tsunami</option>
+        <option value="laras">5. Lara's Food</option>
+      </select>
+    </div>
+  </section>
+
+  <main class="section container">
+    <div class="lista-detallada-lugares">
+
+      <article class="ficha-lugar restaurante" id="bastos">
+        <div class="ficha-info" style="width: 100%;">
+          <div class="ficha-header">
+            <h3>1. Bastos</h3>
+            <span class="calificacion">★ 4.8</span>
+          </div>
+
+          <p class="especialidad">Especialidad: <strong>Comida Internacional y Arroces</strong></p>
+
+          <div class="detalles-contacto">
+            <details class="categoria-menu">
+              <summary><h4>Arroces</h4></summary>
+              <ul>
+                <li><span>Arroz con Pollo</span> <strong>₡6,000</strong></li>
+                <li><span>Arroz de la Casa</span> <strong>₡6,300</strong></li>
+                <li><span>Arroz con Camarones</span> <strong>₡8,700</strong></li>
+                <li><span>Arroz con Mariscos</span> <strong>₡8,700</strong></li>
+                <li><span>Arroz Chaufa (Cerdo, Lomito o Camarón)</span> <strong>₡8,500</strong></li>
+              </ul>
+              <p class="descripcion-corta"><em>Servidos con papas fritas y ensalada.</em></p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Aperitivos y Comida Rápida</h4></summary>
+              <ul>
+                <li><span>Emparedado de Pollo / Pescado</span> <strong>₡5,000</strong></li>
+                <li><span>Emparedado de Carne</span> <strong>₡5,500</strong></li>
+                <li><span>Emparedado de Jamón y Queso</span> <strong>₡4,200</strong></li>
+                <li><span>Hamburguesa de Res</span> <strong>₡5,800</strong></li>
+                <li><span>Hamburguesa de Pollo</span> <strong>₡5,500</strong></li>
+                <li><span>Hamburguesa Vegetariana</span> <strong>₡5,300</strong></li>
+                <li><span>Chifrijo Bastos</span> <strong>₡5,800</strong></li>
+              </ul>
+              <p class="descripcion-corta"><em>Servidos con papas fritas.</em></p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Almuerzos Ejecutivos (₡5,500)</h4></summary>
+              <ul>
+                <li><span>Filete de Pollo a la Plancha</span> <strong>₡5,500</strong></li>
+                <li><span>Carne en Salsa</span> <strong>₡5,500</strong></li>
+                <li><span>Chuleta de Cerdo</span> <strong>₡5,500</strong></li>
+                <li><span>Tilapia a la Plancha</span> <strong>₡5,500</strong></li>
+              </ul>
+              <p class="descripcion-corta"><em>Incluyen arroz, frijoles, vegetales, ensalada, plátano maduro, postre y té frío.</em></p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Menú de Niños</h4></summary>
+              <ul>
+                <li><span>Hamburguesa</span> <strong>₡4,800</strong></li>
+                <li><span>Nuggets de Pescado / Pollo</span> <strong>₡4,500</strong></li>
+                <li><span>Espaguetis con Mantequilla</span> <strong>₡4,500</strong></li>
+                <li><span>Espaguetis a la Boloñesa</span> <strong>₡5,000</strong></li>
+                <li><span>Mi Casa (Arroz, frijoles, plátano, queso y té)</span> <strong>₡4,500</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Postres</h4></summary>
+              <ul>
+                <li><span>Crème Brûlée Tropical</span> <strong>₡3,500</strong></li>
+                <li><span>Flan de Coco o Caramelo</span> <strong>₡3,500</strong></li>
+                <li><span>Brownie con Helado</span> <strong>₡3,500</strong></li>
+                <li><span>Postre del Día</span> <strong>₡3,500</strong></li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <article class="ficha-lugar restaurante" id="bohemio">
+        <div class="ficha-info" style="width: 100%;">
+          <div class="ficha-header">
+            <h3>2. Café Bohemio</h3>
+            <span class="calificacion">★ 4.5</span>
+          </div>
+
+          <p class="especialidad">Especialidad: <strong>Cafetería, Sándwiches y Platos Fuertes</strong></p>
+
+          <div class="detalles-contacto">
+
+            <details class="categoria-menu">
+              <summary><h4>Platos Fuertes</h4></summary>
+              <ul>
+                <li><span>Patacones Ocaso</span> <strong>₡4,500</strong></li>
+              </ul>
+              <p class="descripcion-corta">Cinco patacones doraditos, con carne desmechada, guacamole, tomate en chimichurri, frijoles molidos y un toque de magia bohemia. Un plato para saborear despacio, como el último rayo del día.</p>
+
+              <ul>
+                <li><span>Hamburguesa Verso Entre Panes</span> <strong>₡6,000</strong></li>
+              </ul>
+              <p class="descripcion-corta">Una creación con alma: torta Angus jugosa, queso blanco y amarillo, plátano maduro caramelizado, tocineta crujiente, lechuga fresca, tomate y pepinillos. Cada ingrediente es un verso... y juntos, un poema para el paladar.</p>
+
+              <ul>
+                <li><span>Pasta Sueño Blanco o Verde</span> <strong>₡4,500</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pasta fusilli libre de gluten, con tu salsa favorita (pesto o blanca), queso parmesano, pollo en fajitas acompañada de ensalada.</p>
+
+              <ul>
+                <li><span>Lasaña de Pollo en Salsa Blanca</span> <strong>₡6,000</strong></li>
+              </ul>
+              <p class="descripcion-corta">Lasaña de pollo en salsa blanca, hongos, maíz dulce, queso mozzarella acompañado con pan de ajo y ensalada. <em>(Disponible de 11:00 AM a 3:00 PM)</em></p>
+
+              <ul>
+                <li><span>Bowl de Colores</span> <strong>₡5,500</strong></li>
+              </ul>
+              <p class="descripcion-corta">Lechuga, zanahoria, tomate cherri, edamame, pepino, quinoa y proteína (pollo, lomito, torta vegana).</p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Sándwich</h4></summary>
+              <ul>
+                <li><span>Sándwich de Jamón y Queso</span> <strong>₡3,200</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pan ciabatta, mantequilla de ajo, queso amarillo, jamón de pavo, lechuga y tomate, acompañado de chips y aderezo especial.</p>
+
+              <ul>
+                <li><span>Sándwich de Pollo</span> <strong>₡3,600</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pan ciabatta, mantequilla de ajo, queso blanco, pollo en fajitas salteado con chile y cebolla, lechuga y tomate, acompañado de chips y aderezo especial.</p>
+
+              <ul>
+                <li><span>Sándwich de Res</span> <strong>₡3,900</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pan ciabatta, mantequilla de ajo, queso blanco, res en fajitas salteado con chile y cebolla, lechuga y tomate, acompañado de chips y aderezo especial.</p>
+
+              <ul>
+                <li><span>Sándwich de Carne Mechada</span> <strong>₡4,100</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pan ciabatta, mantequilla de ajo, queso amarillo, carne mechada, lechuga, guacamole, pepinillos y tomate, acompañado de chips y aderezo especial.</p>
+
+              <ul>
+                <li><span>Panini Capresse</span> <strong>₡3,600</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pan ciabatta, pesto, queso mozzarella, albahaca y tomate, acompañado de chips y aderezo especial.</p>
+
+              <ul>
+                <li><span>Club Sándwich</span> <strong>₡3,900</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pan cuadrado artesanal, jamón, queso, lechuga, tomate, pollo en fajitas con chile, cebolla y un huevo frito.</p>
+
+              <ul>
+                <li><span>Sándwich de Pollo Pesto</span> <strong>₡4,100</strong></li>
+              </ul>
+              <p class="descripcion-corta">Pan ciabatta, pesto, queso blanco, pollo en fajitas salteado con chile y cebolla, lechuga y tomate, acompañado de chips y aderezo especial.</p>
+
+              <p class="descripcion-corta" style="margin-top: 8px;"><em>Por solo ₡500, llená tu proteína favorita con una de nuestras salsas: Teriyaki, Chipotle o Mostaza Miel.</em></p>
+              <p class="descripcion-corta"><em>Puedes cambiar el acompañamiento por papas fritas por solo ₡800 adicionales.</em></p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Cafés Calientes</h4></summary>
+              <ul>
+                <li><span>Espresso</span> <strong>₡1,000</strong></li>
+                <li><span>Espresso Doble</span> <strong>₡1,500</strong></li>
+                <li><span>Macchiato</span> <strong>₡1,500</strong></li>
+                <li><span>Cortado</span> <strong>₡1,500</strong></li>
+                <li><span>Flat White</span> <strong>₡2,300</strong></li>
+                <li><span>Americano</span> <strong>₡1,800</strong></li>
+                <li><span>Café Negro Chorreado</span> <strong>₡1,200</strong></li>
+                <li><span>Café Chorreado con Leche</span> <strong>₡1,500</strong></li>
+                <li><span>Cappuccino</span> <strong>₡2,000</strong></li>
+                <li><span>Cappuccino Grande</span> <strong>₡2,300</strong></li>
+                <li><span>Cappuccino Saborizado</span> <strong>₡3,000</strong></li>
+                <li><span>Cappuccino con Miel</span> <strong>₡2,700</strong></li>
+                <li><span>Mocaccino</span> <strong>₡3,000</strong></li>
+                <li><span>Latte</span> <strong>₡2,300</strong></li>
+                <li><span>Latte Saborizado</span> <strong>₡3,000</strong></li>
+                <li><span>Dirty Chai</span> <strong>₡3,200</strong></li>
+              </ul>
+              <p class="descripcion-corta"><em>Sabores disponibles: Vainilla, Amaretto, Avellanas, Crema Irlandesa, Menta, Caramelo, Baileys.</em></p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Métodos de Filtrado</h4></summary>
+              <ul>
+                <li><span>V60</span> <strong>₡3,000</strong></li>
+                <li><span>Vandola</span> <strong>₡3,000</strong></li>
+                <li><span>Prensa Francesa</span> <strong>₡3,000</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Bebidas Calientes</h4></summary>
+              <ul>
+                <li><span>Chocolate Caliente</span> <strong>₡2,000</strong></li>
+                <li><span>Chocolate Bohemio</span> <strong>₡3,000</strong></li>
+                <li><span>Chai Latte</span> <strong>₡2,500</strong></li>
+                <li><span>Té Matcha en Agua</span> <strong>₡2,500</strong></li>
+                <li><span>Té Matcha en Leche</span> <strong>₡2,800</strong></li>
+                <li><span>Agua Dulce Negra</span> <strong>₡1,500</strong></li>
+                <li><span>Agua Dulce en Leche</span> <strong>₡1,800</strong></li>
+                <li><span>Pinol</span> <strong>₡1,800</strong></li>
+                <li><span>Té</span> <strong>₡1,000</strong></li>
+                <li><span>Infusión</span> <strong>₡3,000</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Iced (Base con hielo *No se bate*)</h4></summary>
+              <ul>
+                <li><span>Iced Coffee Americano</span> <strong>₡2,000</strong></li>
+                <li><span>Iced Coffee Moka</span> <strong>₡2,800</strong></li>
+                <li><span>Cappuccino Iced Coffee</span> <strong>₡2,500</strong></li>
+                <li><span>Iced Coffee Vanilla</span> <strong>₡2,800</strong></li>
+                <li><span>Iced Coffee Amaretto</span> <strong>₡2,800</strong></li>
+                <li><span>Iced Coffee Caramelo</span> <strong>₡2,800</strong></li>
+                <li><span>Iced Coffee Menta</span> <strong>₡2,800</strong></li>
+                <li><span>Iced Coffee Crema Irlandesa</span> <strong>₡2,800</strong></li>
+                <li><span>Iced Coffee Baileys</span> <strong>₡3,000</strong></li>
+                <li><span>Iced Coffee Latte</span> <strong>₡2,500</strong></li>
+                <li><span>Iced Coffee Dirty Chai</span> <strong>₡3,200</strong></li>
+                <li><span>Iced Matcha</span> <strong>₡3,100</strong></li>
+                <li><span>Iced Té Chai</span> <strong>₡3,100</strong></li>
+                <li><span>Affogatto</span> <strong>₡2,500</strong></li>
+                <li><span>Café Bombón</span> <strong>₡2,300</strong></li>
+                <li><span>Soda Italiana (Frambuesas, Sandía, Manzana Verde)</span> <strong>₡2,800</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Otros</h4></summary>
+              <ul>
+                <li><span>Coca Regular</span> <strong>₡800</strong></li>
+                <li><span>Coca Cero</span> <strong>₡800</strong></li>
+                <li><span>Gin</span> <strong>₡800</strong></li>
+                <li><span>Fuze Tea</span> <strong>₡800</strong></li>
+                <li><span>Jugo de Caja</span> <strong>₡450</strong></li>
+                <li><span>Mimosa</span> <strong>₡2,900</strong></li>
+                <li><span>Sangría</span> <strong>₡3,500</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Extras</h4></summary>
+              <ul>
+                <li><span>Leche de Almendras</span> <strong>₡500</strong></li>
+                <li><span>Vaso de Leche</span> <strong>₡800</strong></li>
+                <li><span>Extra de Sabor</span> <strong>₡500</strong></li>
+                <li><span>Extra de Espresso</span> <strong>₡1,000</strong></li>
+              </ul>
+              <p class="descripcion-corta" style="margin-top: 6px;"><em>Todo empaque para llevar tiene un costo de ₡300.</em></p>
+              <p class="descripcion-corta"><em>Los precios no incluyen el 10% del servicio al cliente.</em></p>
+            </details>
+
+          </div>
+        </div>
+      </article>
+            <article class="ficha-lugar restaurante" id="antojitos">
+        <div class="ficha-info" style="width: 100%;">
+          <div class="ficha-header">
+            <h3>3. Soda Los Antojitos</h3>
+            <span class="calificacion">★ 4.6</span>
+          </div>
+
+          <p class="especialidad">Especialidad: <strong>Comida Típica y Casados</strong></p>
+
+          <div class="detalles-contacto">
+            <details class="categoria-menu">
+              <summary><h4>Desayunos</h4></summary>
+              <p class="descripcion-corta">Pinto con: carne en salsa, huevo, queso, natilla, salchichón, huevo ranchero, huevo y jamón, o huevo y tomate.</p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Almuerzos (Casados Tradicionales)</h4></summary>
+              <p class="descripcion-corta">Casados con: carne en salsa, pollo en salsa, dedos de pollo, bisteck de res, chuleta, costilla de cerdo frita, mano de piedra, mondongo o carne mechada.</p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Comidas Rápidas</h4></summary>
+              <p class="descripcion-corta">Hamburguesa con papas, Emparedados, Tacos (3), Patacones, Pupusas, Empanadas variadas y Salchipapas.</p>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Bebidas</h4></summary>
+              <p class="descripcion-corta">Frescos Naturales (Té frío, Frutas, Mora, Tamarindo, Chan), Batidos en leche/agua y Bebidas Calientes.</p>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <article class="ficha-lugar restaurante" id="tsunami">
+        <div class="ficha-info" style="width: 100%;">
+          <div class="ficha-header">
+            <h3>4. Pizzería Tsunami</h3>
+            <span class="calificacion">★ 4.7</span>
+          </div>
+
+          <p class="especialidad">Especialidad: <strong>Pizzas, Calzones y Pastas</strong></p>
+
+          <div class="detalles-contacto">
+            <details class="categoria-menu">
+              <summary><h4>Pizzas Regulares y Especiales</h4></summary>
+              <li><span>Tsunami Especial</span> <strong>₡8,500</strong></li>
+                <li><span>Napolitana</span> <strong>₡7,900</strong></li>
+                <li><span>Hawaiana</span> <strong>₡9,500</strong></li>
+                   <li><span>5 Carnes</span> <strong>₡9,000</strong></li>
+                <li><span>Margarita</span> <strong>₡8,500</strong></li>
+                <li><span>Chicharrón</span> <strong>₡10,000</strong></li>
+                 <li><span>Tocineta</span> <strong>₡8,500</strong></li>
+                  <li><span>Vegetariana</span> <strong>₡8,500</strong></li>
+                <li><span>Pepperoni</span> <strong>₡8,500</strong></li>
+                 <li><span>Hongonada</span> <strong>₡8,500</strong></li>
+                 <li><span>Mexicana</span> <strong>₡8,500</strong></li>
+                 
+              </ul>
+            </details>
+          
+            <details class="categoria-menu">
+              <summary><h4>Combos</h4></summary>
+              <ul>
+                <li><span>Combo 1: Pizza grande + Coca 1,5 L + Pan de ajo</span> <strong>₡9,900</strong></li>
+                <li><span>Combo 2: 2 Pizzas grandes + 2 picheles de té</span> <strong>₡17,800</strong></li>
+                <li><span>Combo 3: Personal napolitana + Pan de ajo + Té</span> <strong>₡2,000</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Calzones y Pastas</h4></summary>
+              <ul>
+                <li><span>Calzone Napolitano</span> <strong>₡2,000 / ₡3,500</strong></li>
+                <li><span>Lasaña / Espagueti (Pollo o Carne)</span> <strong>₡3,500</strong></li>
+                <li><span>Pan de Ajo con Queso</span> <strong>₡1,200</strong></li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </article>
+
+      <article class="ficha-lugar restaurante" id="laras">
+        <div class="ficha-info" style="width: 100%;">
+          <div class="ficha-header">
+            <h3>5. Lara's Food</h3>
+            <span class="calificacion">★ 4.4</span>
+          </div>
+
+          <p class="especialidad">Especialidad: <strong>Comida Rápida, Ceviches y Antojos</strong></p>
+
+          <div class="detalles-contacto">
+            <details class="categoria-menu">
+              <summary><h4>Pollo Frito</h4></summary>
+              <ul>
+                <li><span>Cuarto y Muslo</span> <strong>₡1,800</strong></li>
+                <li><span>Pechuga y Ala</span> <strong>₡2,000</strong></li>
+                <li><span>Con Acompañamiento (Cuarto y Muslo)</span> <strong>₡3,200</strong></li>
+                <li><span>Con Acompañamiento (Pechuga y Ala)</span> <strong>₡3,500</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Hamburguesas</h4></summary>
+              <ul>
+                <li><span>Hawaiana (piña, torta carne, tocineta, salsa casa, lechuga)</span> <strong>₡3,200</strong></li>
+                <li><span>Carne Grande + Papas Francesas</span> <strong>₡3,000</strong></li>
+                <li><span>Carne Grande + Papas Gajo</span> <strong>₡3,400</strong></li>
+                <li><span>Pollo Grande + Papas Francesas</span> <strong>₡3,500</strong></li>
+                <li><span>Pollo Grande + Papas Gajo</span> <strong>₡3,700</strong></li>
+                <li><span>Pollo o carne Pequeña + Papas Francesas</span> <strong>₡2,000</strong></li>
+                <li><span>Pollo o carne Pequeña + Papas Gajo</span> <strong>₡2,200</strong></li>
+                <li><span>Mixta Grande + Papas Francesas</span> <strong>₡3,800</strong></li>
+                <li><span>Mixta Grande + Papas Gajo</span> <strong>₡4,000</strong></li>
+                <li><span>Pollo Pequeña Sin papas</span> <strong>₡1,600</strong></li>
+                <li><span>Carne Sin papas</span> <strong>₡1,600</strong></li>
+                <li><span>Pollo Grande Sin papas</span> <strong>₡2,700</strong></li>
+                <li><span>Carne Grande Sin papas</span> <strong>₡2,500</strong></li>
+                <li><span>Mixta Grande Sin papas</span> <strong>₡2,800</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Ceviches</h4></summary>
+              <ul>
+                <li><span>Ceviche Pequeño</span> <strong>₡3,200</strong></li>
+                <li><span>Ceviche Grande</span> <strong>₡4,000</strong></li>
+                <li><span>Ceviche Costeño Pequeño</span> <strong>₡3,800</strong></li>
+                <li><span>Ceviche Costeño Grande</span> <strong>₡4,500</strong></li>
+                <li><span>Caldosa de Pescado o Costeña</span> <strong>₡1,400</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Tacos</h4></summary>
+              <ul>
+                <li><span>Salchi Taco + Papas Francesas</span> <strong>₡3,800</strong></li>
+                <li><span>Salchi Taco + Papas Gajo</span> <strong>₡4,000</strong></li>
+                <li><span>Taco Sencillo</span> <strong>₡2,600</strong></li>
+                <li><span>Taco + Papas Francesas</span> <strong>₡3,300</strong></li>
+                <li><span>Taco + Papas Gajo</span> <strong>₡3,500</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Salchipapas y Papas</h4></summary>
+              <ul>
+                <li><span>Salchipapas Francesas</span> <strong>₡2,000</strong></li>
+                <li><span>Salchipapas Gajo</span> <strong>₡2,500</strong></li>
+                <li><span>Papas Gajo</span> <strong>₡1,800</strong></li>
+                <li><span>Papas Francesa Crispy</span> <strong>₡1,500</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Patacones</h4></summary>
+              <ul>
+                <li><span>Patacón de Carne o Pollo</span> <strong>₡2,800</strong></li>
+                <li><span>Patacón de Carne o Pollo + Papas Francesas</span> <strong>₡3,500</strong></li>
+                <li><span>Patacón de Carne o Pollo + Papas Gajo</span> <strong>₡3,800</strong></li>
+                <li><span>Patahamburguesa de Carne o Pollo</span> <strong>₡3,200</strong></li>
+                <li><span>Patahamburguesa + Papas Francesas</span> <strong>₡3,600</strong></li>
+                <li><span>Patahamburguesa + Papas Gajo</span> <strong>₡3,800</strong></li>
+                <li><span>Patacón Jumbo (Carne, Frijoles, Pico de Gallo y Queso)</span> <strong>₡3,200</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Nachos</h4></summary>
+              <ul>
+                <li><span>Nachos de Pollo</span> <strong>₡3,000</strong></li>
+                <li><span>Nachos de Carne</span> <strong>₡3,200</strong></li>
+                <li><span>Nachos Mixtos</span> <strong>₡3,500</strong></li>
+                <li><span>Papa Nacho Pollo o Carne francesa</span> <strong>₡3,200</strong></li>
+                <li><span>Papa Nacho Mixto + francesas</span> <strong>₡3,300</strong></li>
+                <li><span>Papa Nacho Mixto + Papas Gajo</span> <strong>₡3,800</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Fajitas</h4></summary>
+              <ul>
+                <li><span>Fajita de Pollo o Pescado</span> <strong>₡2,200</strong></li>
+                <li><span>Fajita Crispy + Papas Francesas</span> <strong>₡3,300</strong></li>
+                <li><span>Fajita Crispy + Papas Gajo</span> <strong>₡3,400</strong></li>
+                <li><span>Fajita Mixta + Papas Francesas</span> <strong>₡3,600</strong></li>
+                <li><span>Fajita Mixta + Papas Gajo</span> <strong>₡3,800</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Adicionales</h4></summary>
+              <ul>
+                <li><span>Mostaza Miel</span> <strong>₡400</strong></li>
+                <li><span>BBQ</span> <strong>₡400</strong></li>
+                <li><span>Búfalo</span> <strong>₡400</strong></li>
+                <li><span>Queso Cheddar</span> <strong>₡500</strong></li>
+                <li><span>Pico de Gallo</span> <strong>₡600</strong></li>
+                <li><span>Carne Mechada</span> <strong>₡1,300</strong></li>
+                <li><span>Ensalada</span> <strong>₡1,000</strong></li>
+                <li><span>Cebolla</span> <strong>₡200</strong></li>
+                <li><span>Torta de Carne</span> <strong>₡1,200</strong></li>
+                <li><span>Piña</span> <strong>₡300</strong></li>
+                <li><span>Tocineta</span> <strong>₡300</strong></li>
+                <li><span>Patacón Extra</span> <strong>₡400</strong></li>
+              </ul>
+            </details>
+
+            <details class="categoria-menu">
+              <summary><h4>Refrescos</h4></summary>
+              <ul>
+                <li><span>Agua 600 ml</span> <strong>₡1,000</strong></li>
+                <li><span>Natural en Agua</span> <strong>₡600</strong></li>
+                <li><span>Natural en Leche</span> <strong>₡1,000</strong></li>
+                <li><span>Té Blanco 2.5 L</span> <strong>₡1,800</strong></li>
+                <li><span>Té Melocotón 2.5 L</span> <strong>₡1,800</strong></li>
+                <li><span>Gaseosa 600 ml</span> <strong>₡1,200</strong></li>
+                <li><span>Gaseosa 1.5 L</span> <strong>₡1,700</strong></li>
+                <li><span>Coca-Cola 2.5 L</span> <strong>₡2,400</strong></li>
+                <li><span>Pepsi 2.5 L</span> <strong>₡1,800</strong></li>
+                <li><span>Gaseosa Vidrio 355 ml</span> <strong>₡800</strong></li>
+              </ul>
+            </details>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Sazón Cañera.</p>
+    </div>
+  </footer>
+
+  <script src="menú.js"></script>
+</body>
+</html>
